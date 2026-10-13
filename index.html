@@ -57,11 +57,22 @@
 
     .hero {
       background: linear-gradient(135deg, #eaf4fb, #ffffff);
-      padding: 95px 8% 85px;
+      padding: 75px 8% 85px;
     }
 
     .hero-content {
       max-width: 900px;
+    }
+
+    .profile-photo {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin-bottom: 25px;
+      border: 4px solid white;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
     }
 
     h1 {
@@ -136,7 +147,7 @@
       padding: 24px;
       border-radius: 9px;
       border-top: 4px solid var(--blue);
-      box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
     }
 
     .card h3 {
@@ -198,6 +209,7 @@
 
   <nav>
     <div class="logo">Adolfo Balderas</div>
+
     <div>
       <a href="#about">About</a>
       <a href="#research">Research</a>
@@ -209,6 +221,13 @@
 
   <header class="hero">
     <div class="hero-content">
+
+      <img
+        src="adolfo_profile_photo.jpg"
+        alt="Adolfo Balderas"
+        class="profile-photo"
+      >
+
       <h1>Adolfo Balderas</h1>
 
       <div class="subtitle">
@@ -224,8 +243,11 @@
 
       <div class="buttons">
         <a class="button" href="#research">View Research</a>
-        <a class="button secondary" href="mailto:YOUR_USC_EMAIL">Contact Me</a>
+        <a class="button secondary" href="mailto:adolfoba@usc.edu">
+          Contact Me
+        </a>
       </div>
+
     </div>
   </header>
 
@@ -254,25 +276,28 @@
       <h2>Research Interests</h2>
 
       <div class="research-grid">
+
         <div class="card">
           <h3>Advanced Integration</h3>
-          <p>2.5D and 3D ICs, chiplets, interposers, HBM, and hybrid bonding.</p>
+          <p>
+            2.5D and 3D ICs, chiplets, interposers, HBM, and hybrid bonding.
+          </p>
         </div>
 
         <div class="card">
           <h3>EDA and Physical Design</h3>
-          <p>Design automation for heterogeneous systems and advanced packages.</p>
-        </div>
-
-        <div class="card">
-          <h3>Interconnect Analysis</h3>
-          <p>Signal integrity, propagation delay, eye diagrams, and S-parameter modeling.</p>
+          <p>
+            Design automation for heterogeneous systems and advanced packages.
+          </p>
         </div>
 
         <div class="card">
           <h3>Power and Thermal Design</h3>
-          <p>Power-, temperature-, and reliability-aware hardware design.</p>
+          <p>
+            Power-, temperature-, and reliability-aware hardware design.
+          </p>
         </div>
+
       </div>
     </div>
   </section>
@@ -282,6 +307,7 @@
       <h2>Selected Projects</h2>
 
       <div class="project-grid">
+
         <div class="card">
           <h3>VLSI Physical Design Studies</h3>
           <p>
@@ -305,6 +331,7 @@
             emphasis on privacy and efficient hardware implementation.
           </p>
         </div>
+
       </div>
     </div>
   </section>
@@ -315,7 +342,11 @@
 
       <div class="timeline-item">
         <h3>University of Southern California</h3>
-        <div class="date">Ph.D. Student, Electrical and Computer Engineering</div>
+
+        <div class="date">
+          Ph.D. Student, Electrical and Computer Engineering, 2026–Present
+        </div>
+
         <p>
           Research in EDA for heterogeneous AI chips, 2.5D/3D integration,
           chiplets, and GPU–HBM systems.
@@ -324,7 +355,11 @@
 
       <div class="timeline-item">
         <h3>Harvard University</h3>
-        <div class="date">Previous academic background</div>
+
+        <div class="date">
+          B.S. Electrical Engineering, 2022–2026
+        </div>
+
         <p>
           Experience in electrical engineering, digital design, computer
           architecture, semiconductor devices, and microfabrication.
@@ -344,15 +379,15 @@
 
       <p>
         Email:
-        <a href="mailto:YOUR_USC_EMAIL">adolfoba@usc.edu</a>
+        <a href="mailto:adolfoba@usc.edu">adolfoba@usc.edu</a>
       </p>
 
       <p>
         <a href="https://github.com/adolfobalderas">GitHub</a>
         &nbsp;·&nbsp;
-        <a href="https://www.linkedin.com/in/adolfo-balderas/">LinkedIn</a>
-        &nbsp;·&nbsp;
-        <a href="YOUR_GOOGLE_SCHOLAR_URL">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/adolfo-balderas/">
+          LinkedIn
+        </a>
       </p>
     </div>
   </section>
