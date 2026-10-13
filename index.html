@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adolfo Balderas</title>
+
+  <style>
+    :root {
+      --navy: #102a43;
+      --blue: #2472a4;
+      --light: #f4f7fa;
+      --text: #263238;
+      --muted: #607080;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: var(--white);
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--navy);
+      padding: 14px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: #9ed8f5;
+    }
+
+    .logo {
+      font-size: 1.15rem;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #eaf4fb, #ffffff);
+      padding: 95px 8% 85px;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    h1 {
+      color: var(--navy);
+      font-size: clamp(2.5rem, 6vw, 4.7rem);
+      line-height: 1.1;
+      margin: 0 0 18px;
+    }
+
+    .subtitle {
+      color: var(--blue);
+      font-size: 1.35rem;
+      margin-bottom: 22px;
+    }
+
+    .intro {
+      max-width: 760px;
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 20px;
+      margin-right: 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      background: var(--blue);
+      color: white;
+      font-weight: bold;
+    }
+
+    .button.secondary {
+      background: white;
+      color: var(--blue);
+      border: 1px solid var(--blue);
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    section:nth-of-type(even) {
+      background: var(--light);
+    }
+
+    .section-content {
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    .research-grid,
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 9px;
+      border-top: 4px solid var(--blue);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+    }
+
+    .card h3 {
+      color: var(--blue);
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    .timeline-item {
+      margin-bottom: 25px;
+      padding-left: 20px;
+      border-left: 3px solid var(--blue);
+    }
+
+    .timeline-item h3 {
+      margin-bottom: 3px;
+      color: var(--navy);
+    }
+
+    .date {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 8%;
+      color: white;
+      background: var(--navy);
+    }
+
+    footer a {
+      color: #9ed8f5;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 14px;
+      }
+
+      .hero {
+        padding-top: 65px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">Adolfo Balderas</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#background">Background</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Adolfo Balderas</h1>
+
+      <div class="subtitle">
+        Ph.D. Student in Electrical and Computer Engineering at USC
+      </div>
+
+      <p class="intro">
+        I work on electronic design automation for heterogeneous AI systems,
+        with an emphasis on 2.5D and 3D integrated circuits, chiplet-based
+        architectures, GPU–HBM integration, and power-, thermal-, and
+        signal-integrity-aware design.
+      </p>
+
+      <div class="buttons">
+        <a class="button" href="#research">View Research</a>
+        <a class="button secondary" href="mailto:YOUR_USC_EMAIL">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="section-content">
+      <h2>About Me</h2>
+
+      <p>
+        I am a Ph.D. student in Electrical and Computer Engineering at the
+        University of Southern California, working with Professor Sung Kyu Lim
+        in the Southern California Computer-Aided Design Lab.
+      </p>
+
+      <p>
+        My interests span VLSI design, physical design automation, advanced
+        semiconductor packaging, AI hardware, interconnects, and
+        energy-efficient computing. I am particularly interested in connecting
+        architecture, circuit design, physical implementation, and packaging
+        constraints.
+      </p>
+    </div>
+  </section>
+
+  <section id="research">
+    <div class="section-content">
+      <h2>Research Interests</h2>
+
+      <div class="research-grid">
+        <div class="card">
+          <h3>Advanced Integration</h3>
+          <p>2.5D and 3D ICs, chiplets, interposers, HBM, and hybrid bonding.</p>
+        </div>
+
+        <div class="card">
+          <h3>EDA and Physical Design</h3>
+          <p>Design automation for heterogeneous systems and advanced packages.</p>
+        </div>
+
+        <div class="card">
+          <h3>Interconnect Analysis</h3>
+          <p>Signal integrity, propagation delay, eye diagrams, and S-parameter modeling.</p>
+        </div>
+
+        <div class="card">
+          <h3>Power and Thermal Design</h3>
+          <p>Power-, temperature-, and reliability-aware hardware design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-content">
+      <h2>Selected Projects</h2>
+
+      <div class="project-grid">
+        <div class="card">
+          <h3>VLSI Physical Design Studies</h3>
+          <p>
+            Analysis of routing wirelength, core utilization, metal-layer
+            usage, and physical-design tradeoffs.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Digital and Computer Architecture</h3>
+          <p>
+            Digital logic, processor datapath and control design, and
+            hardware-system development.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>FPGA and Privacy-Preserving Hardware</h3>
+          <p>
+            FPGA-based signal-processing and voice-encoding systems with an
+            emphasis on privacy and efficient hardware implementation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="background">
+    <div class="section-content">
+      <h2>Education and Background</h2>
+
+      <div class="timeline-item">
+        <h3>University of Southern California</h3>
+        <div class="date">Ph.D. Student, Electrical and Computer Engineering</div>
+        <p>
+          Research in EDA for heterogeneous AI chips, 2.5D/3D integration,
+          chiplets, and GPU–HBM systems.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Harvard University</h3>
+        <div class="date">Previous academic background</div>
+        <p>
+          Experience in electrical engineering, digital design, computer
+          architecture, semiconductor devices, and microfabrication.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-content">
+      <h2>Contact</h2>
+
+      <p>
+        I am interested in research collaborations, hardware design,
+        electronic design automation, and advanced semiconductor integration.
+      </p>
+
+      <p>
+        Email:
+        <a href="mailto:YOUR_USC_EMAIL">adolfoba@usc.edu</a>
+      </p>
+
+      <p>
+        <a href="https://github.com/adolfobalderas">GitHub</a>
+        &nbsp;·&nbsp;
+        <a href="https://www.linkedin.com/in/adolfo-balderas/">LinkedIn</a>
+        &nbsp;·&nbsp;
+        <a href="YOUR_GOOGLE_SCHOLAR_URL">Google Scholar</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Adolfo Balderas
+  </footer>
+
+</body>
+</html>
